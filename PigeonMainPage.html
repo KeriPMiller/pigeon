@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>
+			Pigeon Drop
+		</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="PigeonMainPage.css">
+	<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="welcome">
+			</div>	
+			
+			<form>
+				<label>Username</label>
+				<input class="username" type="text">
+
+				<label>Password</label>
+				<input type="password">
+
+				<input type="submit">	
+			</form>
+		</div>
+
+		<nav id="services-nav">
+			<ul class="nav">
+				<li class="logo"><a href="index.html"><img src="images/pigeon-icon.png"></a></li>
+				<div class="options">
+				<li><a href="services.html">Services</a></li>
+				<li class="ourpigeons"><a href="gallery.html">Our Pigeons</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Contact</a></li>
+				</div>
+			</ul>
+		</nav>
+
+		<script>
+			$(document).ready(function(){
+				$("form").submit(function(event){
+					event.preventDefault();
+					var hideit = $("form").hide();
+					var username = $(".username").val();
+					var welcome = "Welcome, " + username + "!";
+
+					$(".welcome").fadeIn(1000);
+					$(".welcome").text(welcome);					
+				});
+			});		
+		</script>
+	</body>	
+</html>
