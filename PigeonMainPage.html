@@ -34,11 +34,11 @@
 		<nav id="services-nav">
 			<ul class="nav">
 				<li class="logo"><a href="index.html"><img src="images/pigeon-icon.png"></a></li>
-				<div class="options">
-				<li><a href="services.html">Services</a></li>
-				<li class="ourpigeons"><a href="gallery.html">Our Pigeons</a></li>
-				<li><a href="#">FAQ</a></li>
-				<li><a href="#">Contact</a></li>
+					<div class="options">
+					<li class="services"><a href="services.html">Services</a></li>
+					<li class="ourpigeons"><a href="gallery.html">Our Pigeons</a></li>
+					<li class="FAQ"><a href="PigeonFAQ.html">FAQ</a></li>
+					<li class="contact"><a href="#">Contact</a></li>
 				</div>
 			</ul>
 		</nav>
@@ -75,6 +75,26 @@
 
 					$(".welcome").fadeIn(1000);
 					$(".welcome").text(welcome);					
+				});
+				$(".services").hover(function(){
+					$(".services").css("font-size", "40px");
+				}, function(){
+					$(".services").css("font-size", "35px");
+				});
+				$(".ourpigeons").hover(function(){
+					$(".ourpigeons").css("font-size", "40px");
+				}, function(){
+					$(".ourpigeons").css("font-size", "35px");
+				});
+				$(".FAQ").hover(function(){
+					$(".FAQ").css("font-size", "40px");
+				}, function(){
+					$(".FAQ").css("font-size", "35px");
+				});
+				$(".contact").hover(function(){
+					$(".contact").css("font-size", "40px");
+				}, function(){
+					$(".contact").css("font-size", "35px");
 				});
 			});		
 		</script>

@@ -1,0 +1,153 @@
+<!DOCTYPE>
+<html>
+	<head>
+			<title>
+				FAQ
+			</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="PigeonFAQ.css">
+		<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		</head>
+
+		<body>
+			<div class="main">
+				<h1>
+					Frequently Asked Questions
+				</h1>	
+			</div>
+
+			<nav id="services-nav">
+				<ul class="nav">
+					<li class="logo"><a href="index.html"><img src="images/pigeon-icon.png"></a></li>
+					<div class="options">
+					<li class="services"><a href="services.html">Services</a></li>
+					<li class="ourpigeons"><a href="gallery.html">Our Pigeons</a></li>
+					<li class="FAQ"><a href="#">FAQ</a></li>
+					<li class="contact"><a href="#">Contact</a></li>
+					</div>
+				</ul>
+			</nav>
+
+			<p class="click">
+				Click questions to see answers!
+			</p>	
+
+			<ol class="questions">
+			
+			<li class="q1">
+				Is there a weight limit for deliveries?<br><br><br>
+			</li>	
+
+			<li class="q2">
+				Can I order food with Pigeon Drop?
+			</li>	
+
+			<li class="q3">
+				How long do deliveries typically take?<br><br><br>
+			</li>	
+
+			<li class="q4">
+				Can I tip the pigeons for doing a good job?<br><br>
+			</li>
+
+			<li class="q5">
+				Can I track my delivery?
+			</li>	
+
+			<li class="q6">
+				Do you have any future projects you are working on?
+			</li>	
+			</ol>
+
+
+			<ul class="answers">
+			
+			<li class="a1">
+				Our pigeons undergo a strict diet and workout regiment to ensure that they can handle any delivery items. If one pigeon can't handle a load alone, we'll send as many as it takes. Keep in mind though, they are small birds. No pianos, please.
+			</li>	
+
+			<li class="a2">
+				Of course! We are not liable for any eaten food, however.
+			</li>	
+
+			<li class="a3">
+				With their ability to fly, our pigeons avoid all the usual delivery delay factors like traffic and congestion. They are prone to distractions, however, such as breadcrumbs, loud noises, colors, shapes, etc. Estimated delivery times range from 5 minutes to never.
+			</li>	
+
+			<li class="a4">
+				Our pigeons always appreciate recognition for their good service. All our pigeons are equipped with tip pouches around their neck where you can place your tip. Please do not tip with rice.
+
+			</li>
+
+			<li class="a5">
+				Sure! All you need is a pair of binoculars.
+			</li>		
+
+			<li class="a6">
+				We are currently hard at work developing Rat Crawl, an underground, rat-based delivery service. We are hoping to launch in 2016.
+			</li>	
+			</ul>
+		</body>
+		
+		<script>
+			$(document).ready(function(){
+				$(".services").hover(function(){
+					$(".services").css("font-size", "40px");
+				}, function(){
+					$(".services").css("font-size", "35px");
+				});
+				$(".ourpigeons").hover(function(){
+					$(".ourpigeons").css("font-size", "40px");
+				}, function(){
+					$(".ourpigeons").css("font-size", "35px");
+				});
+				$(".FAQ").hover(function(){
+					$(".FAQ").css("font-size", "40px");
+				}, function(){
+					$(".FAQ").css("font-size", "35px");
+				});
+				$(".contact").hover(function(){
+					$(".contact").css("font-size", "40px");
+				}, function(){
+					$(".contact").css("font-size", "35px");
+				});
+				$(".answers").hide();
+				$(".a1").hide();
+				$(".a2").hide();
+				$(".a3").hide();
+				$(".a4").hide();
+				$(".a5").hide();
+				$(".a6").hide();
+
+				$(".q1").click(function(){
+					$(".answers").show(),
+					$(".a1").show(1000);
+
+				});
+				$(".q2").click(function(){
+					$(".answers").show(),
+					$(".a2").show(1000)
+				});
+				$(".q3").click(function(){
+					$(".answers").show(),
+					$(".a3").show(1000)
+				});
+				$(".q4").click(function(){
+					$(".answers").show(),
+					$(".a4").show(1000)
+				});
+				$(".q5").click(function(){
+					$(".answers").show(),
+					$(".a5").show(1000)
+				});
+				$(".q6").click(function(){
+					$(".answers").show(),
+					$(".a6").show(1000)
+				});
+			});
+		</script>	
+
+
+</html>

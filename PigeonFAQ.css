@@ -1,11 +1,3 @@
-.welcome {
-	display: none;
-	float: right;
-	margin-right: 12%;
-	font-size: 20px;
-	color: white;
-	padding-top: 1%;
-}
 .main {	
 	height: 70%;
 	width: 100%;
@@ -19,25 +11,18 @@
 }
 h1 {
 	color: white;
-	font-size: 150;
+	font-size: 80;
 	clear: both;
 	text-align: center;
-	padding-top: 40px;
+	padding-top: 120px;
 	font-family: 'Lobster', cursive;
-}
-form {
-	float: right;
-	color: white;
-	padding-top: 1%;
-	padding-right: 1%;
 }
 nav {
 	width: 100%;
 	height: 200px;
 	margin-top: 420px;
 	float: left;
-	margin-bottom: 60px;
-	
+	margin-bottom: 60px;	
 }
 
 nav ul {
@@ -82,16 +67,28 @@ img {
 	font-size: 20px;
 	font-family: 'Indie Flower', cursive;
 }
-.rent {
-	padding-left: 80px;
-	width: 600px;
+.questions {
+	float: left;
+	width: 300px;
+	padding-top: 20px;
+	font-family: 'Indie Flower', cursive;
 }
-.genius {
-	padding-left: 600px;
-	width: 600px;
-	text-align: right;
+.answers {
+	float: right;
+	width: 700px;
+	padding-top: 20px;
+	font-family: 'Indie Flower', cursive;
+	list-style-image: url('images/footprint.gif');
 }
-.end {
+.questions li {
+	padding-bottom: 20px;
+}
+.answers li {
+	padding-bottom: 20px;
+}
+.click {
 	text-align: center;
-	font-size: 25px;
+	font-family: 'Indie Flower', cursive;
+	font-size: 25;
+
 }
