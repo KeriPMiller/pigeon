@@ -169,6 +169,34 @@ footer {
 	margin: 30px;
 }
 
-@media all (max-width: 930px) {
-
+@media all and (min-width: 645px) and (max-width: 930px) {
+	.header-img {
+		height: 400px;
+		background-image: url("images/headerImg/pigeon-bridge.jpg");
+		background-size: cover;
+	}
+	nav {
+		height: 250px;
+	}
+	.content {
+		padding-top: 250px;
+	}
+}
+/*still working on*/
+/*@media all and (max-width: 644px) {
+	.header-img {
+		height: 400px;
+		background-image: url("images/headerImg/pigeonwire.jpg");
+		background-size: cover;
+		position: relative;
+	}
+	.logo {
+		height: 100px;
+	}
+	nav{
+		margin-top: 0px;
+	}
+	nav ul li a {
+		display: block;
+	}*/
 }

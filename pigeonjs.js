@@ -1,7 +1,8 @@
 $(document).ready(function(){
 	$("#gallery-nav li a").mouseenter(function(){
 		$(this).animate({
-			color: "green"});
+			color: "green"
+		});
 		console.log("mouse over nav link");
 	});
 	$("#gallery-nav li a").mouseleave(function(){
@@ -19,25 +20,20 @@ $(document).ready(function(){
 		$(this).animate({
 			color:"#ac6fc7"
 		});
-		console.log("mouseleave nav link");
+			console.log("mouseleave nav link");
 	});
 	$(".gallery").mouseenter(function(){
 		 $(this).children(".hover-content").show("fade", 500);
-		console.log("mouse is in");
-	});
+			console.log("mouse is in");
+		});
 	$(".gallery").mouseleave(function(){
 			$(this).children(".hover-content").hide("fade", 500);
-		console.log("mouse is out");
-	});
+			console.log("mouse is out");
+		});
 	// expand
-	$(".gallery").click(function(){
-		$(this).addClass("big");
-		$(this).children(".hover-content").css({"backgroundColor": "orange", "opacity":".5"});
-		console.log("regular click only");
-	});
-		$(".big").click(function(){
-		$(this).removeClass("big");
-		$(this).children(".hover-content").css({"backgroundColor": "#49433c", "opacity":".9"});
-		console.log("big class clicked");
-	});
+		$(".gallery").click(function(){
+			$(this).toggleClass("big",1000);
+			$(this).children(".hover-content").css({"backgroundColor": "orange", "opacity":".7"});
+			console.log("clicked");
+		});
 });
