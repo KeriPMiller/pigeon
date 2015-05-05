@@ -1,6 +1,7 @@
 body {
 	color: #c2d2cf; 
 	background-color: #474545;
+	margin: 0px;
 }
 
 .header-img {
@@ -8,7 +9,7 @@ body {
 	height: 400px;
 	background-image: url('images/headerImg/street-pigeon.jpg');
 	background-position: center;
-	position: absolute;
+
 	top: 0;
 	left: 0;
 	right: 0;
@@ -71,7 +72,7 @@ img {
 }
 
 .content {
-	padding-top: 600px;
+	padding-top: 200px;
 	font-size: 1.2em;
 	font-family: 'Josefin Slab', serif;
 	text-align: justify;
@@ -106,6 +107,14 @@ footer {
 	float: left;
 }
 
+.big {
+	width: 600px;
+	height: 600px;
+	border-radius: 200px;
+	display: inline;
+	float: left;
+}
+
 .hover-content {
 	display: none;
 	padding-top: 120px;
@@ -117,36 +126,42 @@ footer {
 	border-radius: 145px;
 	opacity: .9;
 }
+
 #pic1 {
 	background-image: url("images/gallery/pic1.jpg");
 	background-position: 50% 50%;
 	background-size: cover;
 	margin: 30px;
 }
+
 #pic2 {
 	background-image: url("images/gallery/pic7.jpg");
 	background-position: center;
 	background-size: cover;
 	margin: 30px;
 }
+
 #pic3 {
 	background-image: url("images/gallery/pic3.jpg");
 	background-position: 70% 100%;
 	background-size: cover;
 	margin: 30px;
 }
+
 #pic4 {
 	background-image: url("images/gallery/pic4.jpg");
 	background-position: center;
 	background-size: cover;
 	margin: 30px;
 }
+
 #pic5 {
 	background-image: url("images/gallery/pic5.jpg");
 	background-position: top left;
 	background-size: cover;
 	margin: 30px;
 }
+
 #pic6 {
 	background-image: url("images/gallery/pic6.jpg");
 	background-position: bottom left;
