@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	// add enlarging effect
 	$("#gallery-nav li a").mouseenter(function(){
 		$(this).animate({
 			color: "green"
