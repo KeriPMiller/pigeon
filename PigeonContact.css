@@ -12,18 +12,18 @@ body {
 }
 h1 {
 	color: white;
-	font-size: 80;
+	font-size: 160;
 	clear: both;
 	text-align: center;
-	padding-top: 180px;
+	padding-top: 140px;
 	font-family: 'Lobster', cursive;
 }
 nav {
 	width: 100%;
 	height: 200px;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 	margin-top: -15px;	
-	background-color: #d5bee0;
+	background-color: #f9dc67;
 }
 nav ul {
 	list-style: none;
@@ -35,7 +35,7 @@ nav ul li {
 	font-size: 35px;
 }
 nav ul li a:hover {
-	color: #480160;
+	color: #bf6d07;
 }
 .ourpigeons {
 	width: 270px;
@@ -46,7 +46,7 @@ nav ul li a {
 	font-family: 'Nixie One', cursive;
 	padding: 0 2%;
 	padding-bottom: 20px;
-	color: #6e66b6;
+	color: #df9404;
 }
 .options {
 	padding-left: 30px;
@@ -60,28 +60,22 @@ img {
 	margin: 0;
 	float: left;
 }
-.questions {
-	float: left;
-	width: 300px;
-	padding-top: 20px;
+.content {
 	font-family: 'Indie Flower', cursive;
-}
-.answers {
-	float: right;
-	width: 700px;
-	padding-top: 20px;
-	font-family: 'Indie Flower', cursive;
-	list-style-image: url('images/footprint.gif');
-}
-.questions li {
-	padding-bottom: 20px;
-}
-.answers li {
-	padding-bottom: 20px;
-}
-.click {
+	font-size: 30;
 	text-align: center;
-	font-family: 'Indie Flower', cursive;
-	font-size: 25;
-
 }
+.number {
+	float: left;
+	padding-left: 10%;
+	font-size: 20;
+	font-family: 'Indie Flower', cursive;
+	height: 200px;
+}
+.number a {
+	text-decoration: none;
+	color: #c2d2cf;
+}
+.number a:hover {
+	color: blue;
+}	

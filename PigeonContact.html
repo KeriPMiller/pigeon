@@ -1,0 +1,73 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>
+			FAQ
+		</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="PigeonContact.css">
+		<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class="main">
+			<h1>
+				Contact Us!
+			</h1>	
+		</div>
+			<nav id="services-nav">
+				<a href="PigeonMainPage.html"><img src="images/pigeon-icon.png"></a>
+				<ul class="nav">
+				<div class="options">
+					<li class="services"><a href="services.html">Services</a></li>
+					<li class="ourpigeons"><a href="gallery.html">Our Pigeons</a></li>
+					<li class="FAQ"><a href="PigeonFAQ.html">FAQ</a></li>
+					<li class="contact"><a href="PigeonContact.html">Contact</a></li>
+				</div>
+				</ul>
+			</nav>
+
+		<div class="content">
+			Signing Up for Our Services is Quick and Easy!
+			<br>
+			<span style="font-size:20px">Call or Email us using the number or address below and we'll set you up with an account in no time!</span>
+		</div>	
+		<br><br>
+		<div class="number">
+			Call us!<br>
+				<span style="padding-left:12%">1-800-744-3667</span>
+		
+		<p>
+			Email us!<br>
+				<span style="padding-left:12%"><a href="mailto:PigeonMan@PDrop.com">PigeonMan@PDrop.com</a></span>		
+		</p>	
+		</div>	
+		<script>
+			$(document).ready(function(){
+				$(".services").hover(function(){
+					$(".services").css("font-size", "40px");
+				}, function(){
+					$(".services").css("font-size", "35px");
+				});
+				$(".ourpigeons").hover(function(){
+					$(".ourpigeons").css("font-size", "40px");
+				}, function(){
+					$(".ourpigeons").css("font-size", "35px");
+				});
+				$(".FAQ").hover(function(){
+					$(".FAQ").css("font-size", "40px");
+				}, function(){
+					$(".FAQ").css("font-size", "35px");
+				});
+				$(".contact").hover(function(){
+					$(".contact").css("font-size", "40px");
+				}, function(){
+					$(".contact").css("font-size", "35px");
+				});
+			});		
+		</script>	
+	</body>	
+</html>		
