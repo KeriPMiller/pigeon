@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	// add enlarging effect
 	$("#gallery-nav li a").mouseenter(function(){
 		$(this).animate({
 			color: "green"
@@ -15,6 +14,7 @@ $(document).ready(function(){
 	$("#services-nav li a").mouseenter(function(){
 		$(this).animate({
 			color: "#4d1b7b"});
+
 		console.log("mouse over nav link");
 	});
 	$("#services-nav li a").mouseleave(function(){
@@ -23,6 +23,18 @@ $(document).ready(function(){
 		});
 			console.log("mouseleave nav link");
 	});
+
+	$("nav li a").mouseenter(function(){
+		$(this).css("font-size","40px");
+
+		console.log("css event");
+		});
+	$("nav li a").mouseleave(function(){
+		$(this).css("font-size","35px");
+
+		console.log("css event");
+		});
+		
 	$(".gallery").mouseenter(function(){
 		 $(this).children(".hover-content").show("fade", 500);
 			console.log("mouse is in");
