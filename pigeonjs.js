@@ -47,6 +47,7 @@ $(document).ready(function(){
 		$(".gallery").click(function(){
 			$(this).toggleClass("big",1000);
 			$(this).children(".hover-content").css({"backgroundColor": "orange", "opacity":".7"});
+			$(this).children(".bio").css({"display": "show"});
 			console.log("clicked");
 		});
 });
