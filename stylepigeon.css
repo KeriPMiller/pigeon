@@ -91,15 +91,16 @@ img {
 	width: 45%;
 	float: left;
 	padding: 0 20px;
+	margin-right: 10%;
 }
 
 .col-2 {
-	width: 25%;
+	width: 40%;
 	float: left;
 }
 
 .col-3 {
-	width: 25%;
+	width: 40%;
 	float: left;
 }
 
@@ -188,7 +189,7 @@ footer {
 	margin: 30px;
 }
 
-@media all and (min-width: 645px) and (max-width: 930px) {
+@media all and (min-width: 802px) and (max-width: 930px) {
 	.header-img {
 		height: 400px;
 		background-image: url("images/headerImg/pigeon-bridge.jpg");
@@ -207,21 +208,43 @@ footer {
 		padding-top: 250px;
 	}
 }
-/*still working on*/
-/*@media all and (max-width: 644px) {
+
+@media all and (max-width: 801px) {
 	.header-img {
 		height: 400px;
 		background-image: url("images/headerImg/pigeonwire.jpg");
 		background-size: cover;
 		position: relative;
 	}
-	.logo {
+	.logo img{
 		height: 100px;
+		display: inline;
+		float: left;
 	}
 	nav{
 		margin-top: 0px;
+		height: 300px;
 	}
-	nav ul li a {
-		display: block;
-	}*/
+	nav ul li {
+		display: block;	
+		float: none;
+		margin-left: 15%;
+	}
+	.content {
+		padding-top: 300px;
+	}
+	.col-1 {
+		width: 80%;
+		padding: 10px 5%;
+		margin: 0 5%;
+	}
+	.col-1 ul li {
+		width: 40%;
+		padding-bottom: 20px;
+		text-align: left;
+	}
+	.col-2 {
+		margin-left: 10%;
+		margin-bottom: 40px;
+	}
 }
