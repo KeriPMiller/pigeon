@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	// menu animetions
 	$("#gallery-nav li a").mouseenter(function(){
 		$(this).animate({
 			color: "green"
@@ -23,7 +24,6 @@ $(document).ready(function(){
 		});
 			console.log("mouseleave nav link");
 	});
-
 	$("nav li a").mouseenter(function(){
 		$(this).css("font-size","40px");
 
@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 		console.log("css event");
 		});
-		
+	// gallery events
 	$(".gallery").mouseenter(function(){
 		 $(this).children(".hover-content").show("fade", 500);
 			console.log("mouse is in");
@@ -43,11 +43,50 @@ $(document).ready(function(){
 			$(this).children(".hover-content").hide("fade", 500);
 			console.log("mouse is out");
 		});
-	// expand
+	//  gallery expand
 		$(".gallery").click(function(){
 			$(this).toggleClass("big",1000);
 			$(this).children(".hover-content").css({"backgroundColor": "orange", "opacity":".7"});
 			$(this).children(".bio").css({"display": "show"});
 			console.log("clicked");
 		});
+	// services forms
+	// var $weight = $("#shipping-weight").val();
+	// var $item = $("#shipping-item").val(); tried setting var but did not work
+
+	$("#calculate-button").click(function(){
+		console.log("clicked Calculate");
+		if ( $("#shipping-weight").val()< 2){
+			alert("yes we can ship that" + " " + $("#shipping-item").val() + "!");
+		}
+		else if ($("#shipping-weight").val() > 3){
+			alert("We might be able to ship that" + " " + $("#shipping-item").val() + " " + "if we attach a few pigeons together...");
+		}
+		else if ($("#shipping-weight").val()> 5) {
+			alert("Nope, we can't ship that" + " " + $("#shipping-item" + "."));
+		}else { alert("I don't think so.")};
+	});
+	// tracking number
+
+	$("#track-button").click(function(){
+		console.log("clicked tracking");
+		// var trackingLength = document.getElementById('tracking-number').value;
+		// if (trackingLength.length < 8) {
+		// 	alert("Invalid Tracking number.");
+		// 	return false;
+		// } else{ return true;};
+		// if true...
+		if ($("#tracking-number").val() % 2){
+			console.log($("#tracking-number").val());
+			alert("Your package is seditary at Bryant Park.");
+		} 
+		else if ($("#tracking-number").val() % 3){
+			console.log($("#tracking-number").val());
+			alert("Your package is probably definatly broken.");
+			}
+		else if ($("#tracking-number").val() % 5){
+			console.log($("#tracking-number").val());
+			alert("Your package is currently in the East River.");
+		}else { alert("umm...")};
+			});
 });
