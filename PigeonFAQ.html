@@ -93,26 +93,11 @@
 		
 		<script>
 			$(document).ready(function(){
-				$(".services").hover(function(){
-					$(".services").css("font-size", "40px");
+				$(".options li a").hover(function(){
+					$(this).css("font-size", "40px");
 				}, function(){
-					$(".services").css("font-size", "35px");
-				});
-				$(".ourpigeons").hover(function(){
-					$(".ourpigeons").css("font-size", "40px");
-				}, function(){
-					$(".ourpigeons").css("font-size", "35px");
-				});
-				$(".FAQ").hover(function(){
-					$(".FAQ").css("font-size", "40px");
-				}, function(){
-					$(".FAQ").css("font-size", "35px");
-				});
-				$(".contact").hover(function(){
-					$(".contact").css("font-size", "40px");
-				}, function(){
-					$(".contact").css("font-size", "35px");
-				});
+					$(".options li a").css("font-size", "35px");
+					});
 				$(".answers").hide();
 				$(".a1").hide();
 				$(".a2").hide();

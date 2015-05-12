@@ -76,25 +76,24 @@
 					$(".welcome").fadeIn(1000);
 					$(".welcome").text(welcome);					
 				});
-				$(".services").hover(function(){
-					$(".services").css("font-size", "40px");
+
+				$(".options li a").hover(function(){
+					$(this).css("font-size", "40px");
 				}, function(){
-					$(".services").css("font-size", "35px");
+					$(".options li a").css("font-size", "35px");
 				});
-				$(".ourpigeons").hover(function(){
-					$(".ourpigeons").css("font-size", "40px");
-				}, function(){
-					$(".ourpigeons").css("font-size", "35px");
-				});
-				$(".FAQ").hover(function(){
-					$(".FAQ").css("font-size", "40px");
-				}, function(){
-					$(".FAQ").css("font-size", "35px");
-				});
-				$(".contact").hover(function(){
-					$(".contact").css("font-size", "40px");
-				}, function(){
-					$(".contact").css("font-size", "35px");
+
+				var go = true;
+				$(window).scroll(function() {
+				    if ($(this).scrollTop() > 300 && go) {
+				        $(".rent").stop().animate({'padding-right':'600'}, 2000);
+				        $(".genius").stop().animate({'padding-left':'600'}, 2000);
+				        go = false;
+				    } else if ($(this).scrollTop() < 300 && !go) {
+				        $(".rent").stop().animate({'padding-right':'80'}, 2000);
+				         $(".genius").stop().animate({'padding-left':'80'}, 2000);
+				        go = true;
+				    }
 				});
 			});		
 		</script>
