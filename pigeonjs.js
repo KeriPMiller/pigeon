@@ -75,18 +75,18 @@ $(document).ready(function(){
 		// 	alert("Invalid Tracking number.");
 		// 	return false;
 		// } else{ return true;};
-		// if true...
-		if ($("#tracking-number").val() % 2){
-			console.log($("#tracking-number").val());
-			alert("Your package is seditary at Bryant Park.");
-		} 
-		else if ($("#tracking-number").val() % 3){
-			console.log($("#tracking-number").val());
-			alert("Your package is probably definatly broken.");
-			}
-		else if ($("#tracking-number").val() % 5){
-			console.log($("#tracking-number").val());
-			alert("Your package is currently in the East River.");
-		}else { alert("umm...")};
-			});
+		// if true...	
+	if ($("#tracking-number").val() % 2){
+            console.log($("#tracking-number").val());
+            alert("Your package is sedentary at Bryant Park.");
+        }
+        else if ($("#tracking-number").val() % 3){
+            console.log($("#tracking-number").val());
+            alert("Your package is probably definitely broken.");
+            }
+        else if ($("#tracking-number").val() % 5){
+            console.log($("#tracking-number").val());
+            alert("Your package is currently in the East River.");
+        }else { alert("umm...")};
+            });
 });
