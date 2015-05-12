@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	// menu animetions
+	// menu anamations 
 	$("#gallery-nav li a").mouseenter(function(){
 		$(this).animate({
 			color: "green"
