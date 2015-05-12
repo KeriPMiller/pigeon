@@ -247,4 +247,11 @@ footer {
 		margin-left: 10%;
 		margin-bottom: 40px;
 	}
+	.big {
+	width: 400px;
+	height: 400px;
+	border-radius: 150px;
+	display: inline;
+	float: left;
+}
 }
