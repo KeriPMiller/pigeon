@@ -1,32 +1,48 @@
 body {
 	margin: 0;
+	padding: 0;
 	background-color: #474545;
 	color: #c2d2cf;
 }
 .welcome {
+	position: absolute;
+	padding-left: 70%;
 	display: none;
 	float: right;
-	margin-right: 12%;
 	font-size: 20px;
 	color: white;
 	padding-top: 1%;
 }
-.main {	
+#container img {
+/*	margin-left: -40px;*/
+	position: absolute;
+/*	top: 0;
+	left: 0;*/
+	display: none;
 	height: 70%;
 	width: 100%;
-	background-image: url('http://wordlesstech.com/wp-content/uploads/2013/01/3D-high-resolution-aerial-view-of-Manhattan-2.jpg');
-	background-size: 100% 100%;
+}
+.main {	
+	margin-left: 0;
+	height: 70%;
+	width: 100%;
+	/*background-image: url('http://wordlesstech.com/wp-content/uploads/2013/01/3D-high-resolution-aerial-view-of-Manhattan-2.jpg');
+	background-size: 100% 100%;*/
 	font-weight: bold;
 }
 h1 {
+	position: absolute;
 	color: white;
 	font-size: 140;
 	clear: both;
 	text-align: center;
-	padding-top: 90px;
+	width: 100%;
+	padding-top: 50px;
 	font-family: 'Lobster', cursive;
 }
 form {
+	position: absolute;
+	padding-left: 60%;
 	float: right;
 	color: white;
 	padding-top: 1%;
@@ -66,7 +82,7 @@ nav ul li a {
 	padding-left: 30px;
 	padding-top: 75px;
 }
-img {
+.pigeonimg {
 	height: 200px;
 	width: auto;
 	padding-left: 3%;
@@ -98,4 +114,10 @@ img {
 	text-align: center;
 	font-size: 25px;
 	clear: both;
+}
+footer {
+	clear: both;
+	text-align: center;
+	background-color: #303030;
+	height: 50px;
 }

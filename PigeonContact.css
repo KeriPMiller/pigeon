@@ -79,3 +79,9 @@ img {
 .number a:hover {
 	color: blue;
 }	
+footer {
+	clear: both;
+	text-align: center;
+	background-color: #303030;
+	height: 50px;
+}

@@ -1,9 +1,10 @@
 <!DOCTYPE>
 <html>
 	<head>
-		<title>
-			Pigeon Drop
-		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Pigeon Drop | The Coop </title>
+		<link rel="icon" type="image/png" href="images/pigeon-icon.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="PigeonMainPage.css">
 	<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
@@ -13,6 +14,11 @@
 
 	<body>
 		<div class="main">
+			<div id="container">
+				<img src="http://s3-media1.fl.yelpcdn.com/bphoto/t5uyuER7u2Pqe_c3OyeSfw/o.jpg">
+				<img src="http://wordlesstech.com/wp-content/uploads/2013/01/3D-high-resolution-aerial-view-of-Manhattan-2.jpg">
+				<img src="http://www.wondersandmarvels.com/wp-content/uploads/2014/10/3-pigeons-Pigeoncameras.jpg">
+			</div>	
 			<div class="welcome">
 			</div>	
 			
@@ -32,7 +38,7 @@
 		</div>
 
 		<nav id="services-nav">
-			<a href="PigeonMainPage.html"><img src="images/pigeon-icon.png"></a>
+			<a href="PigeonMainPage.html"><img class="pigeonimg" src="images/pigeon-icon.png"></a>
 			<ul class="nav">
 					<div class="options">
 						<li class="services"><a href="services.html">Services</a></li>
@@ -64,7 +70,7 @@
 				Getting what you want has never been easier. <br>Use the power of the pigeon.<br> Use <span style="font-family:Lobster;font-size:30px">Pigeon Drop</span>
 			</p>	 
 		</div>	
-
+		<footer>&#169 2015, Pigeon Drop</footer>
 		<script>
 			$(document).ready(function(){
 				$("form").submit(function(event){
@@ -95,6 +101,15 @@
 				        go = true;
 				    }
 				});
+
+				$('#container img').hide();
+				function test() {
+				    $("#container img").first().appendTo('#container').fadeOut(5000);
+				    $("#container img").first().fadeIn(3000);
+				    
+				    setTimeout(test, 5000);
+				}
+				test();
 			});		
 		</script>
 	</body>	

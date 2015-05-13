@@ -83,5 +83,10 @@ img {
 	text-align: center;
 	font-family: 'Indie Flower', cursive;
 	font-size: 25;
-
+}
+footer {
+	clear: both;
+	text-align: center;
+	background-color: #303030;
+	height: 50px;
 }

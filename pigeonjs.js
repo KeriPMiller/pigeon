@@ -1,5 +1,9 @@
 $(document).ready(function(){
+<<<<<<< HEAD
 	// menu animetions
+=======
+	// menu anamations 
+>>>>>>> 156e5a8a7f4af2beb30a5a4f7ff82a4c58032c5e
 	$("#gallery-nav li a").mouseenter(function(){
 		$(this).animate({
 			color: "green"
