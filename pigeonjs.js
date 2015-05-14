@@ -56,14 +56,14 @@ $(document).ready(function(){
 
 	$("#calculate-button").click(function(){
 		console.log("clicked Calculate");
-		if ( $("#shipping-weight").val()< 2){
+		if ( $("#shipping-weight").val() <= 3){
 			alert("yes we can ship that" + " " + $("#shipping-item").val() + "!");
 		}
-		else if ($("#shipping-weight").val() > 3){
+		else if ($("#shipping-weight").val() >= 5){
 			alert("We might be able to ship that" + " " + $("#shipping-item").val() + " " + "if we attach a few pigeons together...");
 		}
-		else if ($("#shipping-weight").val()> 5) {
-			alert("Nope, we can't ship that" + " " + $("#shipping-item" + "."));
+		else if ($("#shipping-weight").val() >= 10){
+			alert("Nope, we can't ship that" + " " + $("#shipping-item").val());
 		}else { alert("I don't think so.")};
 	});
 	// tracking number
@@ -82,7 +82,7 @@ $(document).ready(function(){
         }
         else if ($("#tracking-number").val() % 3){
             console.log($("#tracking-number").val());
-            alert("Your package is probably definitely broken.");
+            alert("Your package is probably, definitely broken.");
             }
         else if ($("#tracking-number").val() % 5){
             console.log($("#tracking-number").val());
