@@ -59,7 +59,7 @@ $(document).ready(function(){
 		if ( $("#shipping-weight").val() <= 3){
 			alert("yes we can ship that" + " " + $("#shipping-item").val() + "!");
 		}
-		else if ($("#shipping-weight").val() >= 5){
+		else if ($("#shipping-weight").val() >= 5 && $("shipping-weight").val()< 10){
 			alert("We might be able to ship that" + " " + $("#shipping-item").val() + " " + "if we attach a few pigeons together...");
 		}
 		else if ($("#shipping-weight").val() >= 10){
