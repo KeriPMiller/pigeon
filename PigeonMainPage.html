@@ -84,21 +84,27 @@
 				});
 
 				$(".options li a").hover(function(){
+					if ($(this).width() > 930) {
 					$(this).css("font-size", "40px");
-				}, function(){
+				}}, function(){
+					if ($(this).width() > 930) {
 					$(".options li a").css("font-size", "35px");
-				});
+				}});
 
 				var go = true;
 				$(window).scroll(function() {
-				    if ($(this).scrollTop() > 300 && go) {
+				    if ($(this).width() > 930) {
+				    	if ($(this).scrollTop() > 300 && go) {
 				        $(".rent").stop().animate({'padding-right':'600'}, 2000);
 				        $(".genius").stop().animate({'padding-left':'600'}, 2000);
 				        go = false;
-				    } else if ($(this).scrollTop() < 300 && !go) {
+				    	}
+				    } else if ($(this).width() > 930) {
+				    	if ($(this).scrollTop() < 300 && !go) {
 				        $(".rent").stop().animate({'padding-right':'80'}, 2000);
 				         $(".genius").stop().animate({'padding-left':'80'}, 2000);
 				        go = true;
+				    	}
 				    }
 				});
 

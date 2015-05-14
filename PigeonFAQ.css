@@ -90,3 +90,28 @@ footer {
 	background-color: #303030;
 	height: 50px;
 }
+@media all and (min-width: 802px) and (max-width: 930px) {
+	.pigeonimg {
+		height: 200px;
+	}
+	nav {
+		height: 30%;
+	}
+	.ourpigeons {
+		width: 200px;
+		padding-left: 50px;
+	}
+	nav ul li {
+		font-size: 28px;
+		width: 50px;
+		padding-right: 50px;
+	}
+	.nav {
+		padding-left: 200px;
+	}
+	.answers {
+		width: 500px;
+	}
+	h1 {
+		font-size: 70;
+	}

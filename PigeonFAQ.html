@@ -94,10 +94,12 @@
 		<script>
 			$(document).ready(function(){
 				$(".options li a").hover(function(){
+					if ($(this).width() > 930) {
 					$(this).css("font-size", "40px");
-				}, function(){
+				}}, function(){
+					if ($(this).width() > 930) {
 					$(".options li a").css("font-size", "35px");
-					});
+				}});
 				$(".answers").hide();
 				$(".a1").hide();
 				$(".a2").hide();
