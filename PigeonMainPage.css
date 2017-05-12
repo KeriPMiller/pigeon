@@ -18,7 +18,7 @@
 #container img {
   position: absolute;
   display: none;
-  height: 70%;
+  height: 60%;
   width: 100%;
 }
 
@@ -53,8 +53,9 @@ nav {
   width: 100%;
   height: 200px;
   margin-bottom: 60px;
-  margin-top: -15px;
-  background-color: #97ffff;
+  margin-top: 30%;
+  background-color: #96d9ff;
+  z-index: 50;
 }
 
 nav ul {
@@ -104,26 +105,26 @@ nav ul li a {
   font-family: 'Indie Flower', cursive;
 }
 
-.rent {
+#rent {
   padding-right: 80px;
   width: 600px;
   float: right;
 }
 
-.until {
+#until {
   font-size: 30;
   text-align: center;
   clear: both;
 }
 
-.genius {
+#genius {
   width: 600px;
   text-align: right;
   float: left;
   padding-left: 80px;
 }
 
-.end {
+#end {
   text-align: center;
   font-size: 25px;
   clear: both;
@@ -155,11 +156,11 @@ footer {
   .nav {
     padding-left: 200px;
   }
-  .rent {
+  #rent {
     padding-left: 100px;
     float: none;
   }
-  .genius {
+  #genius {
     padding-left: 400px;
     width: 450px;
   }

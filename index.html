@@ -55,21 +55,21 @@
 			<span style="font-size:35px;padding-left:30px"> Living in Manhattan is hard</span> <br>
 		</p>
 
-		<p class="rent">
+		<p id="rent">
 			The rent is expensive, the subways are crowded, the people are weird. And getting things delivered has always been next to impossible.
 		</p>
 
-		<p class="until">
+		<p id="until">
 			Until now
 		</p>
 
-		<p class="genius">
+		<p id="genius">
 			With one simple stroke of genius, we at Pigeon Drop have revolutionized the Manhattan delivery game. We took something Manhattan has in frustratingly egregious abundance, and found a way to utilize it in a positive way. By harnessing the power of the
 			pigeon, we not only get these birds off the street and out of your way, but we get you your packages faster. With their innate ability to fly, our pigeons can soar over the traffic and clutter that hinder other delivery methods such as cars and bicycles,
 			ensuring that no matter the time of day, you get your package quickly and hassle free.
 		</p>
 		<br>
-		<p class="end">
+		<p id="end">
 			Getting what you want has never been easier. <br>Use the power of the pigeon.<br> Use <span style="font-family:Lobster;font-size:30px">Pigeon Drop</span>
 		</p>
 	</div>
@@ -100,20 +100,20 @@
 			$(window).scroll(function() {
 				if ($(this).width() > 930) {
 					if ($(this).scrollTop() > 300 && go) {
-						$(".rent").stop().animate({
+						$("#rent").stop().animate({
 							"padding-right": "600"
 						}, 2000);
-						$(".genius").stop().animate({
+						$("#genius").stop().animate({
 							"padding-left": "600"
 						}, 2000);
 						go = false;
 					}
 				} else if ($(this).width() > 930) {
 					if ($(this).scrollTop() < 300 && !go) {
-						$(".rent").stop().animate({
+						$("#rent").stop().animate({
 							"padding-right": "80"
 						}, 2000);
-						$(".genius").stop().animate({
+						$("#genius").stop().animate({
 							"padding-left": "80"
 						}, 2000);
 						go = true;
