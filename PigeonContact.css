@@ -1,109 +1,125 @@
-body {
-	margin: 0;
-	background-color: #474545;
-	color: #c2d2cf;
+  body {
+  margin: 0;
+  background-color: #474545;
+  color: #c2d2cf;
 }
-.main {	
-	height: 70%;
-	width: 100%;
-	background-image: url('http://wordlesstech.com/wp-content/uploads/2013/01/3D-high-resolution-aerial-view-of-Manhattan-2.jpg');
-	background-size: 100% 100%;
-	font-weight: bold;
+
+.main {
+  height: 70%;
+  width: 100%;
+  background-image: url('http://wordlesstech.com/wp-content/uploads/2013/01/3D-high-resolution-aerial-view-of-Manhattan-2.jpg');
+  background-size: 100% 100%;
+  font-weight: bold;
 }
+
 h1 {
-	color: white;
-	font-size: 160;
-	clear: both;
-	text-align: center;
-	padding-top: 140px;
-	font-family: 'Lobster', cursive;
+  color: white;
+  font-size: 160;
+  clear: both;
+  text-align: center;
+  padding-top: 140px;
+  font-family: 'Lobster', cursive;
 }
+
 nav {
-	width: 100%;
-	height: 200px;
-	margin-bottom: 30px;
-	margin-top: -15px;	
-	background-color: #f9dc67;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 30px;
+  margin-top: -15px;
+  background-color: #f9dc67;
 }
+
 nav ul {
-	list-style: none;
+  list-style: none;
 }
+
 nav ul li {
-	float: left;
-	width: 200px;
-	text-align: center;
-	font-size: 35px;
+  float: left;
+  width: 200px;
+  text-align: center;
+  font-size: 35px;
 }
+
 nav ul li a:hover {
-	color: #bf6d07;
+  color: #bf6d07;
 }
+
 .ourpigeons {
-	width: 270px;
-	padding-left: 30px;
+  width: 270px;
+  padding-left: 30px;
 }
+
 nav ul li a {
-	text-decoration: none;
-	font-family: 'Nixie One', cursive;
-	padding: 0 2%;
-	padding-bottom: 20px;
-	color: #df9404;
+  text-decoration: none;
+  font-family: 'Nixie One', cursive;
+  padding: 0 2%;
+  padding-bottom: 20px;
+  color: #df9404;
 }
+
 .options {
-	padding-left: 30px;
-	padding-top: 75px;
+  padding-left: 30px;
+  padding-top: 75px;
 }
+
 img {
-	height: 200px;
-	width: auto;
-	padding-left: 3%;
-	padding-right: 2%;
-	margin: 0;
-	float: left;
+  height: 200px;
+  width: auto;
+  padding-left: 3%;
+  padding-right: 2%;
+  margin: 0;
+  float: left;
 }
+
 .content {
-	font-family: 'Indie Flower', cursive;
-	font-size: 30;
-	text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 30;
+  text-align: center;
 }
+
 .number {
-	float: left;
-	padding-left: 10%;
-	font-size: 20;
-	font-family: 'Indie Flower', cursive;
-	height: 200px;
+  float: left;
+  padding-left: 10%;
+  font-size: 20;
+  font-family: 'Indie Flower', cursive;
+  height: 200px;
 }
+
 .number a {
-	text-decoration: none;
-	color: #c2d2cf;
+  text-decoration: none;
+  color: #c2d2cf;
 }
+
 .number a:hover {
-	color: blue;
-}	
-footer {
-	clear: both;
-	text-align: center;
-	background-color: #303030;
-	height: 50px;
+  color: blue;
 }
+
+footer {
+  clear: both;
+  text-align: center;
+  background-color: #303030;
+  height: 50px;
+}
+
 @media all and (min-width: 802px) and (max-width: 930px) {
-	.pigeonimg {
-		height: 200px;
-	}
-	nav {
-		height: 30%;
-	}
-	.ourpigeons {
-		width: 200px;
-		padding-left: 50px;
-	}
-	nav ul li {
-		font-size: 28px;
-		width: 50px;
-		padding-right: 50px;
-	}
-	.nav {
-		padding-left: 200px;
-	}
-	h1 {
-		font-size: 140;
-	}
+  .pigeonimg {
+    height: 200px;
+  }
+  nav {
+    height: 30%;
+  }
+  .ourpigeons {
+    width: 200px;
+    padding-left: 50px;
+  }
+  nav ul li {
+    font-size: 28px;
+    width: 50px;
+    padding-right: 50px;
+  }
+  .nav {
+    padding-left: 200px;
+  }
+  h1 {
+    font-size: 140;
+  }

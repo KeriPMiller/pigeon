@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Pigeon Drop | The Coop </title>
+	<link rel="icon" type="image/png" href="images/pigeon-icon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="PigeonMainPage.css">
+	<link href="http://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="main">
+		<div id="container">
+			<img src="http://s3-media1.fl.yelpcdn.com/bphoto/t5uyuER7u2Pqe_c3OyeSfw/o.jpg">
+			<img src="http://wordlesstech.com/wp-content/uploads/2013/01/3D-high-resolution-aerial-view-of-Manhattan-2.jpg">
+			<img src="http://www.wondersandmarvels.com/wp-content/uploads/2014/10/3-pigeons-Pigeoncameras.jpg">
+		</div>
+		<div class="welcome">
+		</div>
+
+		<form>
+			<label>Username</label>
+			<input class="username" type="text">
+
+			<label>Password</label>
+			<input type="password">
+
+			<input type="submit">
+		</form>
+
+		<h1>
+				Pigeon Drop
+			</h1>
+	</div>
+
+	<nav id="services-nav">
+		<a href="index.html"><img class="pigeonimg" src="images/pigeon-icon.png"></a>
+		<ul class="nav">
+			<div class="options">
+				<li class="services"><a href="services.html">Services</a></li>
+				<li class="ourpigeons"><a href="gallery.html">Our Pigeons</a></li>
+				<li class="FAQ"><a href="PigeonFAQ.html">FAQ</a></li>
+				<li class="contact"><a href="PigeonContact.html">Contact</a></li>
+			</div>
+		</ul>
+	</nav>
+
+	<div class="about">
+		<p>
+			<span style="font-size:35px;padding-left:30px"> Living in Manhattan is hard</span> <br>
+		</p>
+
+		<p class="rent">
+			The rent is expensive, the subways are crowded, the people are weird. And getting things delivered has always been next to impossible.
+		</p>
+
+		<p class="until">
+			Until now
+		</p>
+
+		<p class="genius">
+			With one simple stroke of genius, we at Pigeon Drop have revolutionized the Manhattan delivery game. We took something Manhattan has in frustratingly egregious abundance, and found a way to utilize it in a positive way. By harnessing the power of the
+			pigeon, we not only get these birds off the street and out of your way, but we get you your packages faster. With their innate ability to fly, our pigeons can soar over the traffic and clutter that hinder other delivery methods such as cars and bicycles,
+			ensuring that no matter the time of day, you get your package quickly and hassle free.
+		</p>
+		<br>
+		<p class="end">
+			Getting what you want has never been easier. <br>Use the power of the pigeon.<br> Use <span style="font-family:Lobster;font-size:30px">Pigeon Drop</span>
+		</p>
+	</div>
+	<footer>&#169 2015, Pigeon Drop</footer>
+	<script>
+		$(document).ready(function() {
+			$("form").submit(function(event) {
+				event.preventDefault();
+				var hideit = $("form").hide();
+				var username = $(".username").val();
+				var welcome = "Welcome, " + username + "!";
+
+				$(".welcome").fadeIn(1000);
+				$(".welcome").text(welcome);
+			});
+
+			$(".options li a").hover(function() {
+				if ($(this).width() > 930) {
+					$(this).css("font-size", "40px");
+				}
+			}, function() {
+				if ($(this).width() > 930) {
+					$(".options li a").css("font-size", "35px");
+				}
+			});
+
+			var go = true;
+			$(window).scroll(function() {
+				if ($(this).width() > 930) {
+					if ($(this).scrollTop() > 300 && go) {
+						$(".rent").stop().animate({
+							"padding-right": "600"
+						}, 2000);
+						$(".genius").stop().animate({
+							"padding-left": "600"
+						}, 2000);
+						go = false;
+					}
+				} else if ($(this).width() > 930) {
+					if ($(this).scrollTop() < 300 && !go) {
+						$(".rent").stop().animate({
+							"padding-right": "80"
+						}, 2000);
+						$(".genius").stop().animate({
+							"padding-left": "80"
+						}, 2000);
+						go = true;
+					}
+				}
+			});
+
+			$("#container img").hide();
+
+			function test() {
+				$("#container img").first().appendTo("#container").fadeOut(5000);
+				$("#container img").first().fadeIn(3000);
+
+				setTimeout(test, 5000);
+			}
+			test();
+		});
+	</script>
+</body>
+
+</html>

@@ -1,152 +1,169 @@
-body {
-	margin: 0;
-	padding: 0;
-	background-color: #474545;
-	color: #c2d2cf;
+  body {
+  margin: 0;
+  padding: 0;
+  background-color: #474545;
+  color: #c2d2cf;
 }
+
 .welcome {
-	position: absolute;
-	padding-left: 70%;
-	display: none;
-	float: right;
-	font-size: 20px;
-	color: white;
-	padding-top: 1%;
+  position: absolute;
+  padding-left: 70%;
+  display: none;
+  float: right;
+  font-size: 20px;
+  color: white;
+  padding-top: 1%;
 }
+
 #container img {
-	position: absolute;
-	display: none;
-	height: 70%;
-	width: 100%;
+  position: absolute;
+  display: none;
+  height: 70%;
+  width: 100%;
 }
-.main {	
-	margin-left: 0;
-	height: 70%;
-	width: 100%;
-	font-weight: bold;
+
+.main {
+  margin-left: 0;
+  height: 70%;
+  width: 100%;
+  font-weight: bold;
 }
+
 h1 {
-	position: absolute;
-	color: white;
-	font-size: 140;
-	clear: both;
-	text-align: center;
-	width: 100%;
-	padding-top: 50px;
-	font-family: 'Lobster', cursive;
+  position: absolute;
+  color: white;
+  font-size: 120%;
+  clear: both;
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+  font-family: 'Lobster', cursive;
 }
+
 form {
-	position: absolute;
-	padding-left: 60%;
-	float: right;
-	color: white;
-	padding-top: 1%;
-	padding-right: 1%;
+  position: absolute;
+  padding-left: 60%;
+  float: right;
+  color: white;
+  padding-top: 1%;
+  padding-right: 1%;
 }
+
 nav {
-	width: 100%;
-	height: 200px;
-	margin-bottom: 60px;
-	margin-top: -15px;	
-	background-color: #97ffff;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 60px;
+  margin-top: -15px;
+  background-color: #97ffff;
 }
+
 nav ul {
-	list-style: none;
+  list-style: none;
 }
+
 nav ul li {
-	float: left;
-	width: 200px;
-	text-align: center;
-	font-size: 35px;
+  float: left;
+  width: 200px;
+  text-align: center;
+  font-size: 35px;
 }
+
 nav ul li a:hover {
-	color: #025898;
+  color: #025898;
 }
+
 .ourpigeons {
-	width: 270px;
-	padding-left: 30px;
+  width: 270px;
+  padding-left: 30px;
 }
+
 nav ul li a {
-	text-decoration: none;
-	font-family: 'Nixie One', cursive;
-	padding: 0 2%;
-	padding-bottom: 20px;
-	color:#0099cc;
+  text-decoration: none;
+  font-family: 'Nixie One', cursive;
+  padding: 0 2%;
+  padding-bottom: 20px;
+  color: #0099cc;
 }
+
 .options {
-	padding-left: 30px;
-	padding-top: 75px;
+  padding-left: 30px;
+  padding-top: 75px;
 }
+
 .pigeonimg {
-	height: 200px;
-	width: auto;
-	padding-left: 3%;
-	padding-right: 2%;
-	margin: 0;
-	float: left;
+  height: 200px;
+  width: auto;
+  padding-left: 3%;
+  padding-right: 2%;
+  margin: 0;
+  float: left;
 }
+
 .about {
-	font-size: 20px;
-	font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  font-family: 'Indie Flower', cursive;
 }
+
 .rent {
-	padding-right: 80px;
-	width: 600px;
-	float: right;
+  padding-right: 80px;
+  width: 600px;
+  float: right;
 }
+
 .until {
-	font-size:30;
-	text-align:center;
-	clear:both;
+  font-size: 30;
+  text-align: center;
+  clear: both;
 }
+
 .genius {
-	width: 600px;
-	text-align: right;
-	float: left;
-	padding-left: 80px;
+  width: 600px;
+  text-align: right;
+  float: left;
+  padding-left: 80px;
 }
+
 .end {
-	text-align: center;
-	font-size: 25px;
-	clear: both;
+  text-align: center;
+  font-size: 25px;
+  clear: both;
 }
+
 footer {
-	clear: both;
-	text-align: center;
-	background-color: #303030;
-	height: 50px;
+  clear: both;
+  text-align: center;
+  background-color: #303030;
+  height: 50px;
 }
+
 @media all and (min-width: 802px) and (max-width: 930px) {
-	.pigeonimg {
-		height: 200px;
-	}
-	nav {
-		height: 30%;
-	}
-	.ourpigeons {
-		width: 200px;
-		padding-left: 50px;
-	}
-	nav ul li {
-		font-size: 28px;
-		width: 50px;
-		padding-right: 50px;
-	}
-	.nav {
-		padding-left: 200px;
-	}
-	.rent {
-		padding-left: 100px;
-		float: none;
-	}
-	.genius {
-		padding-left: 400px;
-		width: 450px;
-	}
-	h1 {
-		font-size: 120;
-	}
-	form {
-		padding-left: 250px;
-		width: 500px;
-	}
+  .pigeonimg {
+    height: 200px;
+  }
+  nav {
+    height: 30%;
+  }
+  .ourpigeons {
+    width: 200px;
+    padding-left: 50px;
+  }
+  nav ul li {
+    font-size: 28px;
+    width: 50px;
+    padding-right: 50px;
+  }
+  .nav {
+    padding-left: 200px;
+  }
+  .rent {
+    padding-left: 100px;
+    float: none;
+  }
+  .genius {
+    padding-left: 400px;
+    width: 450px;
+  }
+  form {
+    padding-left: 250px;
+    width: 500px;
+  }

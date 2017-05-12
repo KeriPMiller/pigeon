@@ -1,80 +1,85 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Pigeon Drop | Services </title>
-		<!-- favicon -->
-		<link rel="icon" type="image/png" href="images/pigeon-icon.png">
-		<!-- css -->
-		<link rel="stylesheet" type="text/css" href="stylepigeon.css">
-		<!-- custom fonts -->
-		<link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
-		<!-- bootstrap -->
-		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
-		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-	</head>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<body>
-		<div class="header-img"></div>
-		<nav id="services-nav">
-			<div class="logo"><a href="PigeonMainPage.html"><img src="images/pigeon-icon.png"></a></div>
-			<ul class="nav">
-					<li><a href="services.html">Services</a></li>
-					<li class="two-word"><a href="gallery.html">Our Pigeons</a></li>
-					<li><a href="PigeonFAQ.html">FAQ</a></li>
-					<li><a href="PigeonContact.html">Contact</a></li>
+	<title>Pigeon Drop | Services </title>
+	<!-- favicon -->
+	<link rel="icon" type="image/png" href="images/pigeon-icon.png">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="stylepigeon.css">
+	<!-- custom fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet" type="text/css">
+	<!-- bootstrap -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+</head>
+
+<body>
+	<div class="header-img"></div>
+	<nav id="services-nav">
+		<div class="logo">
+			<a href="index.html"><img src="images/pigeon-icon.png"></a>
+		</div>
+		<ul class="nav">
+			<li><a href="services.html">Services</a></li>
+			<li class="two-word"><a href="gallery.html">Our Pigeons</a></li>
+			<li><a href="PigeonFAQ.html">FAQ</a></li>
+			<li><a href="PigeonContact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="content">
+		<div class="col-1">
+			<h1>Services</h1>
+			<p>
+				If you need to send a small or moderately medium package in no rush at all, we got you covered.If you need to send a well sealed package of non perishable food items across town, we got you covered. If you need to send a personal correspondence that is
+				too risque for the prying eyes of the nsa but tame enough to be sent by unsecured city pigeons, WE GOT YOU.
+			</p>
+
+			<p>
+				Here at Pigeon Drop we provide solutions fitted for every shipping need, as long as those solutions involve pigeons.
+			</p>
+
+			<h2>Special Services Provided</h2>
+			<ul class="services">
+				<li class="services">Complimentary packing material made of pigeon down</li>
+				<li class="services">The Valentine"s day Special- Send a dozen pigeons with red roses to your Sweetheart"s home or workplace to show off how much you care.(only available in Feb.)</li>
+				<li class="services">Amazon Prime Delivery</li>
 			</ul>
-		</nav>
-		<div class="content">
-			<div class="col-1">
-				<h1>Services</h1>
-				<p>
-				 	If you need to send a small or moderately medium package in no rush at all, we got you covered.If you need to send a well sealed package of non perishable food items across town, we got you covered. If you need to send a personal correspondence that is too risque for the prying eyes of the nsa but tame enough to be sent by unsecured city pigeons, WE GOT YOU.
-				</p>
-
-				<p>
-					Here at Pigeon Drop we provide solutions fitted for every shipping need, as long as those solutions involve pigeons.
-				</p>
-
-						<h2>Special Services Provided</h2>
-					<ul class="services">
-						<li class="services">Complimentary packing material made of pigeon down</li>
-						<li class="services">The Valentine's day Special- Send a dozen pigeons with red roses to your Sweetheart's home or workplace to show off how much you care.(only available in Feb.)</li>
-						<li class="services">Amazon Prime Delivery</li>
-					</ul>
-			</div>
-			<div class="col-2">
-				<div class="calculator">
-					<h2> Check Your Package</h2>
-						<p>Check to see if your package can be shipped with Pigeon Drop</p>
-					<form>
-						<label>What are you trying to ship?</label>
-						<input type="text" id="shipping-item" placeholder="Your Item"><br><br>
-						<label>How much does it weight?</label>
-						<input id="shipping-weight" type="number" placeholder="Pounds">
-						<input type="submit" id="calculate-button" value="Calculate">
-					</form>
-				</div>
-			</div>
-			<div class="col-3">
-				<div class="tracking">
-					<h2> Track Your Package</h2>
-						<p>Please enter your 8 digit tracking number.</p>
-					<form>
-						<label>Tracking #</label>
-						<input type="number" id="tracking-number" placeholder="Tracking Number">
-						<input type="submit" id="track-button" value="Track">
-					</form>
-				</div>
+		</div>
+		<div class="col-2">
+			<div class="calculator">
+				<h2> Check Your Package</h2>
+				<p>Check to see if your package can be shipped with Pigeon Drop</p>
+				<form>
+					<label>What are you trying to ship?</label>
+					<input type="text" id="shipping-item" placeholder="Your Item"><br><br>
+					<label>How much does it weight?</label>
+					<input id="shipping-weight" type="number" placeholder="Pounds">
+					<input type="submit" id="calculate-button" value="Calculate">
+				</form>
 			</div>
 		</div>
-		<footer>&#169 2015, Pigeon Drop</footer>
-		<script type="text/javascript" src="pigeonjs.js"></script>
-	</body>
+		<div class="col-3">
+			<div class="tracking">
+				<h2> Track Your Package</h2>
+				<p>Please enter your 8 digit tracking number.</p>
+				<form>
+					<label>Tracking #</label>
+					<input type="number" id="tracking-number" placeholder="Tracking Number">
+					<input type="submit" id="track-button" value="Track">
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer>&#169 2015, Pigeon Drop</footer>
+	<script type="text/javascript" src="pigeonjs.js"></script>
+</body>
+
 </html>
